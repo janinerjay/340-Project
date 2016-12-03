@@ -5,7 +5,7 @@
 	height:100%;
 }
 #contentBox{
-	background-color: blue;
+	background-color: orange;
 	position:relative;
 	z-index:2;
 	text-align:center;
@@ -31,3 +31,11 @@
 	height:20px;
 }
 
+.imageSize{
+	height:50px;
+	width:50px;
+}
+.profile-image{
+	height: 100px;
+	width: 60%
+}
