@@ -1,0 +1,33 @@
+#profileBox{
+	position:fixed;
+	right: 0;
+	background-color: yellow;
+	height:100%;
+}
+#contentBox{
+	background-color: blue;
+	position:relative;
+	z-index:2;
+	text-align:center;
+}
+#header{
+	height:100px;
+	background-color: grey;
+	position:fixed;
+	left:0;
+    right:0;
+    top:0;
+    z-index:3;
+	
+	}
+
+#mainContent{
+	margin-top:100px;
+}
+.title-bar{
+	height:100px;
+}
+.input-field-size{
+	height:20px;
+}
+
