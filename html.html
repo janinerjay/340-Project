@@ -10,32 +10,39 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- bootstrap libraries -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </head>
-   <body>
+   <body style="background-color:#558C89">
       <div class="container-fluid row">
-         <div id="header" class="col-xs-12">
-            <div id="logo-col" class="col-xs-2">
+         <div id="header" class="col-xs-12" style="border-bottom: 1px solid black;padding:0; margin:0;">
+            <div id="logo-col" class="col-xs-2" style="padding:0; margin:0;">
                <img src="images/hoffmanLogo.png" class="imageSize" alt="hoffman" align="center">
             </div>
             <div class="col-xs-8">
-               <nav class="navbar navbar-default fit-nav-bar">
+               <nav class="navbar navbar-default fit-nav-bar" style="margin-top:10px;">
                   <div class="container-fluid" style="padding-left:0px;padding-right:0px">
-                     <ul class="nav navbar-nav">
-                        <li class="nav-bar-margin"><a href="#">Friends</a></li>
-                        <li class="nav-bar-margin"><a href="#">Requests</a></li>
-                        <li class="nav-bar-margin"><a href="#">Rankings</a></li>
-                        <li class="nav-bar-margin" style="border-right: 0px"><a href="#">Rewards</a></li>
-                     </ul>
-                 <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-	<ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li style="padding-right:5px"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-    </ul>
-
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                        </button>
+                     </div>
+                     <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                           <li class="nav-bar-margin"><a href="#">Friends</a></li>
+                           <li class="nav-bar-margin"><a href="#">Requests</a></li>
+                           <li class="nav-bar-margin"><a href="#">Rankings</a></li>
+                           <li class="nav-bar-margin"><a href="#">Rewards</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                           <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                           </div>
+                           <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                           <li style="padding-right:8px"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        </ul>
+                     </div>
                   </div>
                </nav>
             </div>
@@ -54,7 +61,8 @@
          </div>
       </div>
       <div id="mainContent" class="container-fluid row">
-         <div id="contentBox"class="col-xs-10">
+         <div class="col-xs-1">.</div>
+         <div id="contentBox"class="col-xs-8">
             Main Content
             <br><br>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
@@ -66,22 +74,24 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
             <br><br><br><br>
          </div>
-         <div id="profileBox" class="col-xs-2">MY PROFILE<br><br>
+         <div id="profileBox" class="col-xs-2 black-border">
+            <br>
             <img src="images/bird.jpg" class="img-circle profile-image" alt="Bird">
-			<div class="form-group"><!-- submit button that calls js method -->
-			<br>
-				<input type="profile" class="btn btn-default" id="profilebtn" value="MY PROFILE"/>
-			</div>
-			<div style="border:1px solid black">
-				<p style="text-align:center;font-weight:bold" >Your Requests</p>
-				<ul>
-  <li>Request from: Lorem ipsum dolor sit amet</li>
-  <li>Request from: Lorem ipsum dolor sit amet</li>
-  <li>Request from: Lorem ipsum dolor sit amet</li>
-</ul>  
-				<p>Request from: Lorem ipsum dolor sit amet, <br><br>Request from: Lorem ipsum dolor sit amet,</p>
-			</div>
+            <div class="form-group">
+               <br>
+               <button type="button" class="btn btn-default" id="profilebtn" style="display: block;margin-left: auto;margin-right: auto;">MY PROFILE</button>
+            </div>
+            <div style="border:1px solid black">
+               <p style="text-align:center;font-weight:bold" >Your Requests</p>
+               <ul>
+                  <li>Request from: Lorem ipsum dolor sit amet</li>
+                  <li>Request from: Lorem ipsum dolor sit amet</li>
+                  <li>Request from: Lorem ipsum dolor sit amet</li>
+               </ul>
+               <p>Request from: Lorem ipsum dolor sit amet, <br><br>Request from: Lorem ipsum dolor sit amet,</p>
+            </div>
          </div>
+         <div class="col-xs-1" >.</div>
       </div>
    </body>
 </html>
