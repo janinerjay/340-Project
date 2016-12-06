@@ -72,6 +72,11 @@
 	border: 1px solid black;
 }
 
+/*Link Sytling*/
+a{
+    color: #000;
+}
+
 /*Gold Badge Image*/
 .rewardImages{
     width:100px;
