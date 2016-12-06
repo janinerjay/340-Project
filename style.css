@@ -1,7 +1,7 @@
 #profileBox{
 	position:fixed;
 	right: 8.33%;
-	background-color: #D46500;
+	background-color: #FC7802;
 	height:100%;
 }
 #contentBox{
@@ -85,7 +85,7 @@ a{
 
 /*Modal*/
   .modal-header, .close {
-      background-color: #5cb85c;
+      background-color: #fc7802;
       color:white !important;
       text-align: center;
       font-size: 30px;
