@@ -46,6 +46,11 @@
                   </div>
                </nav>
             </div>
+			<div class="col-xs-2">
+               <Button data-toggle="modal" data-target="#aboutModal">About</Button>
+               <Button data-toggle="modal" data-target="#helpModal">Help</Button>
+               <Button data-toggle="modal" data-target="#contactModal">Contact</Button>
+            </div>
          </div>
       </div>
       <div id="mainContent" class="container-fluid row">
@@ -108,5 +113,67 @@
          <div class="col-xs-1" >.</div>
       </div>
     </div>
+	<!-- Modal -->
+      <div id="aboutModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">About</h4>
+               </div>
+               <div class="modal-body">
+                  <ul>
+                     <li>Buck-Cats website was developed by Janine Jay and Troy Ingel</li>
+                     <li>Buck-Cats Idea created by Ian Jacobs, Alex Thimineur, Brian Eisenberg and Diego Houlguin</li>
+                  </ul>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div id="helpModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Help</h4>
+               </div>
+               <div class="modal-body">
+                  <ul>
+                     <li>This website is designed to help Quinnipiac students buy and sell meal plan.</li>
+                     <li>To get started, make an account and set your buying and selling preferences.</li>
+                     <li>Then use the search bar to start searching for and adding friends.</li>
+                     <li>Once friends have been added, you can start making transactions with them</li>
+                  </ul>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div id="contactModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Contact</h4>
+               </div>
+               <div class="modal-body">
+                  <p>Any issues, suggestions or business inquiries can be sent to BuckCats@gmail.com</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
    </body>
 </html>
